@@ -1,16 +1,31 @@
-/* becode/javascript
- *
- * /02-maths/06-fizzbuzz/script.js - 2.6: fizzbuzz
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
-
 (function() {
 
+    const output = [];
+    const count = 1;
+    
+    function fizzBuzz() {
+    
+        while (count <= 100 ) {
+    
+    if (count % 3 === 0 && count % 5 === 0){
+          output.push("FizzBuzz");
+      }
+       else if (count % 3 === 0){
+          output.push("Fizz");
+    
+          }
+      else if (count % 5 === 0) {
+          output.push("Buzz");
+      }
+    
+      else {
+          output.push(count);
+      }
+      count ++;
+      }
+        console.log(output);
+    }
+    
     // your code here
 
 })();

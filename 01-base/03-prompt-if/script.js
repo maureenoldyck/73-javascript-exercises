@@ -1,7 +1,7 @@
 
 (function() {
   
-  var cake = confirm("Do you want some cake?");
+  const cake = confirm("Do you want some cake?");
 
   if (cake == true) {
       answer = alert("Congratulations on your cake 🍰");

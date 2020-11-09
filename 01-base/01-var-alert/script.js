@@ -1,5 +1,5 @@
 (function () {
-    var myHello = "Hello, World!";
+    const myHello = "Hello, World!";
     alert(myHello); 
 })(); 
 
