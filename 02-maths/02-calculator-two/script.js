@@ -3,25 +3,25 @@
 
     const performOperation = operation => {
 
-    let x = Number(document.getElementById("op-one").value);
-    let y = Number(document.getElementById("op-two").value);
-    let z = 1;
+    let numberOne = Number(document.getElementById("op-one").value);
+    let numberTwo = Number(document.getElementById("op-two").value);
+    let result = 1;
 
         switch (operation) {
             case "addition":
-                z = x + y;
+                result = numberOne + numberTwo;
                 break;
             case "substraction":
-                z = x - y;
+                result = numberOne - numberTwo;
                 break;
             case "multiplication":
-                z = x * y;
+                result = numberOne * numberTwo;
                 break;
             case "division":
-                z = x / y;
+                result = numberOne / numberTwo;
                 break;
         }
-        alert(z);
+        alert(result);
         // perform the operation
     };
 
