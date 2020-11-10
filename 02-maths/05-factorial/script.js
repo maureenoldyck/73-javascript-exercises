@@ -15,7 +15,7 @@
             return num;
           }
          
-        let number = parseInt(document.getElementById("number").value);
+        let number = document.getElementById("number").value;
         let answer = factorialize(number);
         alert(answer);
 
