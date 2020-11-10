@@ -1,15 +1,22 @@
-/* becode/javascript
- *
- * /03-colors/03-change-bcg-three/script.js - 3.3: couleur de fond (3)
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
+(function () {
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
+    function randomColor() {
 
-(function() {
+        const hexCode = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+            color = color + hexCode[Math.floor(Math.random() * 16)];
+        }
+        return color;
+
+    }
+
+    document.getElementById("run").addEventListener("click", function () {
+
+        document.body.style.backgroundColor = randomColor();
+
+
+    });
 
     // your code here
 
