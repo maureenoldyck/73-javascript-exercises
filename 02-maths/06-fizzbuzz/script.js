@@ -26,6 +26,7 @@
         console.log(output);
     }
     
+    console.log(fizzBuzz());
     // your code here
 
 })();
