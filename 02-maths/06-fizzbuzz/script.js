@@ -1,7 +1,7 @@
 (function() {
 
-    const output = [];
-    const count = 1;
+    let output = [];
+    let count = 1;
     
     function fizzBuzz() {
     
