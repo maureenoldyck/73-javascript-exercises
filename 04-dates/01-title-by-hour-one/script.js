@@ -3,7 +3,7 @@
 
    let hour = new Date().getHours(); 
 
-if (hour < 18) {
+if (hour <= 17) {
     document.getElementById("target").innerHTML =  "Hello!";
 }
 
