@@ -21,8 +21,8 @@
         "orange",
         "mandarin",
         "durian",
-        "peache",
-        "grap",
+        "peach",
+        "grape",
         "cherry",
     ];
 
