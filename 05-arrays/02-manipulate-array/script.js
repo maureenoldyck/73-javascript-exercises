@@ -11,19 +11,30 @@
 
 (function() {
 
+    document.getElementById("run").addEventListener("click", function () {
     var fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
+        "apple",
+        "pear",
+        "raspberry",
+        "tomatoes",
+        "kiwi",
+        "banana",
         "orange",
-        "mandarine",
+        "mandarin",
         "durian",
-        "pêche",
-        "raisin",
-        "cerise",
+        "peach",
+        "grape",
+        "cherry",
     ];
+fruits.shift();
+fruits.pop();
+fruits.unshift("banana");
+fruits.push("kiwi");
+alert(fruits);
 
+// fruits[0] = "banana";
+// fruits[] = 
     // your code here
+});
 
 })();
