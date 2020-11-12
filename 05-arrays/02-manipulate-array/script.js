@@ -32,8 +32,6 @@ fruits.unshift("banana");
 fruits.push("kiwi");
 alert(fruits);
 
-// fruits[0] = "banana";
-// fruits[] = 
     // your code here
 });
 
