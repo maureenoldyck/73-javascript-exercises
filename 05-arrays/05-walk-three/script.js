@@ -9,10 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    var people = [
-        {
+    var people = [{
             firstname: "Garald",
             lastname: "Freschi",
             email: "gfreschi0@discuz.net",
@@ -38,6 +37,16 @@
             email: "mcoal4@creativecommons.org",
         },
     ];
+
+    document.getElementById("run").addEventListener("click", function () {
+
+
+        people.forEach( name => {
+
+            console.log(name.firstname , name.lastname);
+        });
+
+    });
 
     // your code here
 
