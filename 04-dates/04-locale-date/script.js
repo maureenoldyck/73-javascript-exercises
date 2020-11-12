@@ -11,7 +11,19 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+let today = new Date();
+    let year = today.getFullYear();
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    let month = months[today.getMonth()];
+    let date = today.getDate();
+    let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    let day = days[today.getDay()-1];
+    let minutes = today.getMinutes();
+    let hour = today.getHours();
+
+let dayToday = day + " " + date + " " + month + " " + year + ", " + hour + "h" + minutes +".";
+
+document.getElementById("target").innerHTML = dayToday;
 
     // your code here
 
