@@ -26,7 +26,7 @@
         let age = yearToday - year;
     
 
-        if (month >= monthToday && day > dayToday) {
+        if (month == monthToday && day > dayToday) {
             age = age - 1 ;
         }
 
