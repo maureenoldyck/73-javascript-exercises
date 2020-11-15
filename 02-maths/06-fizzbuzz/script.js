@@ -1,32 +1,15 @@
 (function() {
 
-    let output = [];
-    let count = 1;
-    
-    function fizzBuzz() {
-    
-        while (count <= 100 ) {
-    
-    if (count % 3 === 0 && count % 5 === 0){
-          output.push("FizzBuzz");
-      }
-       else if (count % 3 === 0){
-          output.push("Fizz");
-    
-          }
-      else if (count % 5 === 0) {
-          output.push("Buzz");
-      }
-    
-      else {
-          output.push(count);
-      }
-      count ++;
-      }
-        console.log(output);
+    for(let i = 1; i <= 100; i++) {
+        if(i % 5 == 0 && i % 3 == 0) { 
+            console.log("fizzbuzz");
+        } else if (i % 5 == 0) {
+            console.log("buzz");
+        } else if (i % 3 == 0) {
+            console.log("fizz");
+        } else {
+            console.log(i);
+        }
     }
-    
-    console.log(fizzBuzz());
-    // your code here
 
 })();
