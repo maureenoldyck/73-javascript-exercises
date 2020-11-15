@@ -1,28 +1,52 @@
-/* becode/javascript
- *
- * /05-arrays/14-bird-names-generator/script.js - 5.14: générateur de noms d'oiseau
- *
- * coded by leny@BeCode
- * started at 08/05/2019
- */
-
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
-
 (() => {
-    const birds = [
-        {name: "seagull", num: 1},
-        {name: "raven", num: 3},
-        {name: "chickadee", num: 2},
-        {name: "owl", num: 4},
-        {name: "buzzard", num: 8},
-        {name: "pigeon", num: 1},
-        {name: "magpie", num: 3},
-        {name: "vulture", num: 2},
-        {name: "falcon", num: 1},
-        {name: "robin", num: 2},
-        {name: "dove", num: 1},
-        {name: "crow", num: 5},
+    const birds = [{
+            name: "seagull",
+            num: 1
+        },
+        {
+            name: "raven",
+            num: 3
+        },
+        {
+            name: "chickadee",
+            num: 2
+        },
+        {
+            name: "owl",
+            num: 4
+        },
+        {
+            name: "buzzard",
+            num: 8
+        },
+        {
+            name: "pigeon",
+            num: 1
+        },
+        {
+            name: "magpie",
+            num: 3
+        },
+        {
+            name: "vulture",
+            num: 2
+        },
+        {
+            name: "falcon",
+            num: 1
+        },
+        {
+            name: "robin",
+            num: 2
+        },
+        {
+            name: "dove",
+            num: 1
+        },
+        {
+            name: "crow",
+            num: 5
+        },
     ];
     const adjectives = new Set([
         "gray",
@@ -39,4 +63,20 @@
     ]);
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", function () {
+
+        let randomBird = birds[(Math.floor(Math.random() * birds.length))];
+        const arrayAdjectives = [...adjectives];
+        let randomAdjective = arrayAdjectives[(Math.floor(Math.random() * arrayAdjectives.length))];
+
+        if (randomBird.num == 1) {
+            document.getElementById("target").innerHTML = "A " + randomAdjective + " " + randomBird.name + ".";
+
+        } else {
+            document.getElementById("target").innerHTML = "A few " + randomAdjective + " " + randomBird.name + "s.";
+        }
+    });
+
+
 })();
