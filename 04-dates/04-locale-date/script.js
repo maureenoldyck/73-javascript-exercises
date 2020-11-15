@@ -16,8 +16,8 @@ let today = new Date();
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let month = months[today.getMonth()];
     let date = today.getDate();
-    let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-    let day = days[today.getDay()-1];
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let day = days[today.getDay()];
     let minutes = today.getMinutes();
     let hour = today.getHours();
 
