@@ -9,10 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    var people = [
-        {
+    var people = [{
             firstname: "Grenville",
             lastname: "Stive",
             age: 64,
@@ -89,6 +88,23 @@
         },
     ];
 
-    // your code here
+
+
+    document.getElementById("run").addEventListener("click", function () {
+
+        const array = [];
+
+        // We use a loop to get all the ages in a seperate array
+        for (let i = 0; i < people.length; i++) {
+            array.push(people[i].age);
+        };
+
+        // We use the reduce function to sum up the array we created
+        const sumAges = array.reduce((sum, currentValue) => 
+            sum + currentValue
+        );
+
+        console.log(sumAges);
+    });
 
 })();
