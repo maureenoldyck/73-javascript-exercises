@@ -1,16 +1,24 @@
-/* becode/javascript
- *
- * /06-dom/09-match-password-one/script.js - 6.9: vérification de mots de passe (1)
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
+(function () {
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
 
-(function() {
+    document.querySelector("#run").addEventListener("click", check);
 
+
+    function check() {
+
+        let passwordOne = document.querySelector("#pass-one").value;
+        let passwordTwo = document.querySelector("#pass-two").value;
+
+        if (passwordOne != passwordTwo) {
+            const inputbox = document.querySelectorAll("input");
+
+            for (let i = 0; i < inputbox.length; i++) {
+                inputbox[i].style.borderColor = "red";
+            };
+           
+        };
+    };
     // your code here
+
 
 })();
