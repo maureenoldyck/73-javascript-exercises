@@ -1,17 +1,6 @@
-/* becode/javascript
- *
- * /06-dom/06-mini-carousel/script.js - 6.6: mini carousel
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
+(function () {
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
-
-(function() {
-
-    var gallery= [
+    var gallery = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -19,6 +8,25 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
 
+    document.querySelector("#next").addEventListener("click", nextImage);
+ 
+
+ // Put variable of index out of function otherwise it will always reset back to 0 :)   
+    let index = 0;
+
+    function nextImage() {
+
+        if (index < gallery.length - 1) {
+            index ++;
+        } else if (index == gallery.length - 1) {
+            index = 0;
+        };
+
+        document.querySelector("img").src = gallery[index];
+
+    };
+
+
+    // your code here
 })();
