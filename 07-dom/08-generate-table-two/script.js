@@ -1,15 +1,28 @@
-/* becode/javascript
- *
- * /06-dom/08-generate-table-two/script.js - 6.8: génération d'un tableau (2)
- *
- * coded by leny@BeCode
- * started at 26/10/2018
- */
+(function () {
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
+    const target = document.querySelector("#target");
 
-(function() {
+    const table = document.createElement("table");
+
+// Loop for creating 10 rows
+    for (let r = 1; r < 11; r++) {
+        const row = document.createElement("tr");
+
+// Loop for creating 10 cells per row (column)
+        for (let c = 1; c < 11; c++) {
+
+            let result = c * r;
+            let column = document.createElement("td");
+            let text = document.createTextNode(r + " x " + c + " = " + result);
+            column.appendChild(text);
+            row.appendChild(column);
+        };
+        table.appendChild(row);
+
+    };
+
+
+    target.appendChild(table);
 
     // your code here
 
